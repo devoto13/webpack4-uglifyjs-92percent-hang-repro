@@ -5,14 +5,13 @@ import { uglify } from 'rollup-plugin-uglify'
 export default {
   input: 'src/index.js',
   plugins: [
-    resolve(),
-    uglify()
+    resolve()
   ],
   output: {
     file: 'dist/bundle-rollup.js',
     treeshake: true,
     format: 'cjs',
-    name: 'fa-test',
+    name: 'faTest',
     exports: 'named'
   }
 };
